@@ -1,0 +1,313 @@
+/* 
+.movieInfo{
+    background-color: aqua;
+    height:100%;
+}
+
+.poster{
+    height:100%;
+    background-repeat: no-repeat;
+   
+}
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* html,
+body {
+  margin: 0;
+  /* background: black; */
+  /* font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400; */
+/* } */ 
+
+.movie_card {
+  position: relative;
+  display: block;
+  width: 1062px;
+  height: 479px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+/* .movie_card:hover {
+  transform: scale(1.02);
+  transition: all 0.4s;
+} */
+
+.info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+}
+.movie_header {
+  position: relative;
+  padding: 25px;
+  height: 40%;
+}
+.movieinfo h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    padding-top: 16px;
+    padding-left: 193px;
+}
+
+.movieinfo h4 {
+  color: #9ac7fa;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 196px;
+    padding-top:13px;
+
+}
+
+.minutes {
+    display: inline-block;
+    margin-top: -1px;
+    color: #fff;
+    padding: 5px;
+    margin-left: 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    padding-top: 0px;
+}
+
+.type {
+  display: flex;
+    color: #cee4fd;
+    margin-left: 8px;
+    margin-top: 9px;
+}
+
+.locandina {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-left: 42px;
+    margin-top: 27px;
+    height: 190px;
+    box-shadow: 0 0 20px -10px rgb(0 0 0 / 50%);
+}
+
+.movie_desc {
+  padding: 25px;
+  height: 50%;
+}
+.text {
+  color: #cfd6e1;
+  margin-top: 19px;
+}
+
+.movie_social {
+  height: 10%;
+  padding-left: 62px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.social{
+  display: flex;
+  bottom: 27px;
+}
+
+.movieinfo ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -30px;
+}
+.movieinfo li {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.3s;
+  transition-delay: 0.15s;
+  margin: 0 10px;
+}
+.movieinfo li:hover {
+  transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.movieinfo i {
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .movie_header {
+    width: 60%;
+  }
+
+  .movie_desc {
+    width: 57%;
+    padding: 25px;
+    /* height: 50%; */
+    padding-top: 60px;
+    padding-left: 69px;
+    font-size: 15px;
+  }
+
+  .info_section {
+    background: linear-gradient(to right, #0d0d0c 70%, transparent 100%);
+  }
+
+  .blur_back {
+    width: 30%;
+    background-position: -100% 10% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie_card {
+    width: 95%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+  }
+
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .movie_desc {
+    width: 100%;
+  }
+
+  .info_section {
+    background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+
+
+
+
+/* .tomb_back {
+     background: url("https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png");
+ } */
+
+
+
+/* .ave_back {
+     background: url("https://www.gannett-cdn.com/-mm-/c03fd140debe8ad4c05cf81a5cad7ad61a12ce52/c=0-1580-2985-3266&r=x803&c=1600x800/local/-/media/2017/06/09/USATODAY/USATODAY/636326272873599176-Black-Panther-Teaser.jpg");
+ } */
+
+
+.info{
+    background-color: yellow;
+    position: relative;
+    display: block;
+    width: 1062px;
+    /* height: 479px; */
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    margin-top: -70px;
+    overflow: auto;
+}
+
+
+.customHR{
+  
+    /* visibility: hidden; */
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  
+}
+
+.overall_info{
+  margin: auto;
+  
+  width:80%;
+  height: 60%;
+  background: transparent;
+  /* background-image: linear-gradient(to down, #000c19, rgba(255, 255, 255, 0.75), #000c19); */
+  border-radius: 2px;
+}
+
+.overall_info p{
+  margin-left: 159px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.overall_info p img{
+  width:50px;
+  height: 50px;
+  border-radius: 2px;
+  margin: 10px 10px;
+
+}
+
+.overall_info h1{
+  text-align: center;
+  padding-left: 0px;
+}
+
+.overall_info h4{
+  color: #9ac7fa;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    /* margin-left: 160px; */
+    padding-top: 5px;
+    display: inline-block;
+    margin-inline-start: auto;
+    margin-inline-end: 154px;
+}
+
+.overall_info h3{
+    margin-bottom: 31px;
+    font-size: 20px;
+    padding-top: 19px;
+    text-align: center;
+}
+
+.overall_info a{
+  margin-left: 63px;
+  
+}
+
+
+
+.revCard{
+  background-color: #1AA7EC;
+}
+  
+
